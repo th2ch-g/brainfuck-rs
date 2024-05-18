@@ -1,6 +1,6 @@
 use crate::components::navbar::Navbar;
-use yew::prelude::*;
 use web_sys::HtmlTextAreaElement;
+use yew::prelude::*;
 
 #[derive(PartialEq, Properties)]
 pub struct Props;
@@ -34,8 +34,10 @@ impl Component for IndexPage {
             }
             Msg::ShowResult => {
                 self.result = match bf_core::run(&self.value) {
-                    Ok(s) => { s },
-                    Err(e) => { format!("{:?}", e) }
+                    Ok(s) => s,
+                    Err(e) => {
+                        format!("{:?}", e)
+                    }
                 };
                 true
             }

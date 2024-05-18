@@ -26,6 +26,7 @@ jobs:
       - run: |
           npm i
           npm run build:tailwindcss
+        working-directory: bf-wasm/
 
       - name: setup trunk
         uses: jetli/trunk-action@v0.4.0
