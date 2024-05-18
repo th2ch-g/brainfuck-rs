@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./tailwind-b564bc4eef9f1e52.css" integrity="sha384&#x2D;9Ony0bgfFM8WxUJNHHwkDu7QGa&#x2F;Mq&#x2F;NCdih4So0zL6&#x2B;hnlV6VwHNDzw4x&#x2F;2t1z33"/>
+        <title>Brainfuck sample interpreter in Rust</title>
+        <meta name="description" content="Brainfuck sample interpreter in Rust" />
+    
+<link rel="modulepreload" href="./bf-wasm-d0f57536af455bb.js" crossorigin=anonymous integrity="sha384-yDV5g1WrBhA1F4M2TA/a/M9D3/2sardgCIxudGx4o0UDX4NdLeXINT87JwW70J82">
+<link rel="preload" href="./bf-wasm-d0f57536af455bb_bg.wasm" crossorigin=anonymous integrity="sha384-Tn87bqv9jJJ7GTTZoGBNj8rb4wOF5Vy8WpcQnu5NayFa8V+x1b7NEQFPcFNzEjwJ" as="fetch" type="application/wasm"></head>
+    <body>
+<script type="module">
+import init, * as bindings from './bf-wasm-d0f57536af455bb.js';
+const wasm = await init('./bf-wasm-d0f57536af455bb_bg.wasm');
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>
