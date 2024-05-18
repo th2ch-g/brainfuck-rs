@@ -77,7 +77,7 @@ impl Component for IndexPage {
 
                         <div class="bg-white shadow-md rounded-lg p-4 flex-1">
                             <h2 class="text-2xl font-extrabold text-yellow-500 text-xl font-bold mb-4">{"Result"}</h2>
-                            <div id="parsedResult" class="w-full p-2 border border-gray-300 rounded h-48 bg-gray-50"></div>
+                            // <div id="parsedResult" class="w-full p-2 border border-gray-300 rounded h-48 bg-gray-50"></div>
                             {self.result.to_string()}
                         </div>
                     </div>
