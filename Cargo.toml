@@ -1,0 +1,19 @@
+[package]
+name = "bf-core"
+version = "0.1.0"
+edition = "2021"
+description = "Brainfuck programming language interpreter in Rust"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = { version = "3.2.22", features = ["derive"] }
+anyhow = "1.0"
+
+[profile.release]
+lto = true
+strip = true
+
+[[bin]]
+name = "bf"
+path = "src/main.rs"

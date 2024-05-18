@@ -1,2 +1,2 @@
 # brainfuck-rs
-Brainfuck programming language compiler in Rust
+Brainfuck programming language interpreter in Rust
